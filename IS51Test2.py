@@ -1,6 +1,6 @@
 def main():
     infile = open("numbers.txt", "r")
-    grades = [int(word.strip()) for word in infile]
+    grades = [int(word) for word in infile]
     infile.close()
     avg = calculate_average(grades)
     above_average = calculate_percent_above_average(grades) * 100
